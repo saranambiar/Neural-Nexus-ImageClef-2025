@@ -1,0 +1,1 @@
+This is the official repository for Team Neural Nexus to ImageCLEF MedicalGAN 2025 - Subtask 1: "Detect Training Data Usage"
