@@ -7,9 +7,11 @@ Key components:
 - Training pipeline with metrics like accuracy and F1-score
 - Visualizations of input vs. reconstructed outputs
 
-## 📁 Repository Structure
+## Repository Structure
 ├── ViT_based_autoencoder_.ipynb # Main Jupyter notebook
+
 ├── requirements.txt # List of dependencies
+
 ├── README.md # Project documentation
 
 Use the following command to install the requirements
