@@ -9,6 +9,21 @@ Key components:
 - Training pipeline with metrics like accuracy and F1-score
 - Visualizations of input vs. reconstructed outputs
 
+## Model Architecture
+
+- **Encoder**:
+  - Based on the **ViT-B/16** architecture
+  - Modified by:
+    - Removing the classification head
+    - Adding a projection layer to compress 768-dim token embeddings into a lower-dimensional latent space
+    - Using a 1×1 convolution to adapt grayscale (1-channel) images to 3-channel inputs required by ViT
+  - Pretrained on a lung CT dataset to improve domain adaptation for medical images. The dataset is available at : [Chest CT Scan Images](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+
+- **Decoder**:
+  - Convolutional architecture with transposed convolutions
+  - Includes residual blocks for better feature propagation and training stability
+  - Final Tanh activation to normalize the reconstructed image output
+
 ## Repository Structure
 ├── ViT_based_autoencoder_.ipynb # Main Jupyter notebook
 
