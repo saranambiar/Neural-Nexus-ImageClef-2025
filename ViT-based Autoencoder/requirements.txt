@@ -1,0 +1,14 @@
+torch>=2.0.0
+torchvision>=0.15.0
+torchsummary>=1.5.1
+torchview>=0.2.6
+opencv-python
+Pillow
+termcolor
+scikit-learn
+tqdm
+numpy
+pandas
+matplotlib
+seaborn
+graphviz
