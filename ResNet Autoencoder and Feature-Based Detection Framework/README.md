@@ -45,34 +45,7 @@ These features are concatenated into a comprehensive feature vector. A **Random 
 
 ---
 
-## 3. Mathematical Formulations
-
-### GLCM Contrast
-\[
-\text{Contrast} = \sum_{i=0}^{N_g -1} \sum_{j=0}^{N_g -1} (i - j)^2 P(i, j)
-\]
-
-### Wavelet Subband Energy
-\[
-E_s = \sum_{m=1}^{M} \sum_{n=1}^{N} |W_s(m, n)|^2
-\]
-
-### Gabor Filter Response
-\[
-G(x, y) = \exp\left(-\frac{x'^2 + \gamma^2 y'^2}{2\sigma^2}\right) \cdot \cos\left(2\pi \frac{x'}{\lambda} + \phi\right)
-\]
-\[
-x' = x \cos\theta + y \sin\theta,\quad y' = -x \sin\theta + y \cos\theta
-\]
-
-### Mahalanobis Distance
-\[
-D_M(x) = \sqrt{(x - \mu)^T \Sigma^{-1} (x - \mu)}
-\]
-
----
-
-## 4. Experimental Setup
+## 3. Experimental Setup
 
 - **Framework:** TensorFlow 2.12
 - **Language:** Python 3.8
