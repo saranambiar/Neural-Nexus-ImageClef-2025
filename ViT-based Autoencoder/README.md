@@ -23,6 +23,10 @@ Key components:
   - Convolutional architecture with transposed convolutions
   - Includes residual blocks for better feature propagation and training stability
   - Final Tanh activation to normalize the reconstructed image output
+ 
+The proposed ViT-based autoencoder excels at medical image reconstruction by leveraging self-attention mechanisms to capture global context from the input. Unlike CNNs, which have limited receptive fields, Vision Transformers (ViT) can model long-range dependencies—critical for detecting subtle and spatially dispersed anomalies in medical scans. Additionally, pretraining the encoder on lung CT images enables the model to learn domain-specific anatomical patterns, enhancing its ability to extract meaningful features for reconstruction.
+
+To adapt grayscale medical images to the ViT architecture, a lightweight 1×1 convolution is used for channel expansion. The decoder, built with transposed convolutions and residual blocks, ensures smooth upsampling and stable training, preserving structural integrity in the reconstructed images. A compact latent space bridges the encoder and decoder, effectively capturing semantic content while minimizing information loss, resulting in high-fidelity reconstructions essential for medical analysis.
 
 ## Repository Structure
 ├── ViT_based_autoencoder_.ipynb # Main Jupyter notebook
