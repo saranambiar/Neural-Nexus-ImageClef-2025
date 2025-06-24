@@ -4,10 +4,9 @@ Autoencoders are neural networks trained to reconstruct their input. Instead of 
 **This approach for the ImageCLEF MedicalGAN 2025 - Subtask 1, yielded the best results in terms of accuracy and Kohen-Kappa score**
 
 Key components:
-- ViT (Vision Transformer) Encoder 
-- Fully-connected / CNN Decoder
+- ViT (Vision Transformer) Encoder
+- Decoder with residual blocks 
 - Training pipeline with metrics like accuracy and F1-score
-- Visualizations of input vs. reconstructed outputs
 
 ## Model Architecture
 
