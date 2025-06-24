@@ -1,0 +1,10 @@
+tensorflow>=2.12
+numpy
+matplotlib
+opencv-python
+scikit-image
+pywavelets
+umap-learn
+pandas
+scipy
+scikit-learn
