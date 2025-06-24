@@ -1,7 +1,7 @@
 # ViT-based Autoencoder
 Autoencoders are neural networks trained to reconstruct their input. Instead of traditional CNNs, this project uses a Vision Transformer (ViT) as the encoder, showcasing the power of self-attention in unsupervised learning tasks.
 
-?**This approach for the 2025 GANS subtask yielded the best results in terms of accuracy and Kohen-Kappa score**
+**This approach for the ImageCLEF MedicalGAN 2025 - Subtask 1, yielded the best results in terms of accuracy and Kohen-Kappa score**
 
 Key components:
 - ViT (Vision Transformer) Encoder 
